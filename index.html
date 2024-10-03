@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title> عدي | Cyber Scurity </title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <meta property="og:title" content="منصة الامن السيبراني لتعليم لغة البرمجة و القرصنة " />
+    <meta property="og:description" content="  منصتنا بين يديك تعلم الامن السيبراني ولغة البرمجة معنا نحنا نود تطوير المحتوى العربية في مجال الامن السيبراني و البرمجة  تعلمو مع  المهندس السوري عدي عبدالرزاق  " />
+    <meta property="og:image" content="https://th.bing.com/th/id/OIP.oKLZPaJAGZKtoaW_pHqnSAAAAA?rs=1&pid=ImgDetMain"/>
+    <meta property="og:url" content="https://CyberSecurity.com/" />
+    <meta property="og:type" content="CyperSecurity" />
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.jpg" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+      .modal-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+
+    </style>
+
+
+ 
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+
+        <h1 class="sitename">Cyber Scurity | الأمن السيبراني </h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active"> الصفحة الرئسية </a></li>
+          <li><a href="#about"> من نحن </a></li>
+          <li><a href="#footer">لمحة</a></li>
+          <li><a href="#gallery">معرض</a></li>
+          <li><a href="#team">قنواتي</a></li>
+          <li><a href="#pricing">  كورساتي </a></li>
+          <li class="dropdown"><a href="#"><span>تبرع للقناة</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+             
+                <li><a href="#" id="usdtLink"><img src="assets/img/team/ustd.png" width="30px" alt=""> USDT TRON</a></li>
+                
+              <li class="dropdown"><a href="#"><span>تخطي اعلانات</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="starter-page.html"> <i class="bi bi-link-45deg" style="width: 30px;"></i>تخطي  صفحتين</a></li>
+                  <li><a href="starter-page.html"> <i class="bi bi-link-45deg" style="width: 30px;"></i>تخطي ثلاث صفحة</a></li>
+                  <li><a href="starter-page.html"> <i class="bi bi-link-45deg" style="width: 30px;"></i>تخطي اربع صفحة</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#contact">  التواصل معي </a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+
+        
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="modalLabel">رابط المحفظة</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <p>يمكنك التحويل إلى المحفظة التالية:</p>
+                  <input type="text" id="walletAddress" value="gfhytth55845h8ty52g8rt5yh8t8" class="form-control" readonly>
+                  <button class="btn btn-primary mt-2" id="copyBtn">نسخ الرابط</button>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+      <img src="assets/img/hero-bg-2.jpg" alt="" class="hero-bg">
+
+      <div class="container">
+        <div class="row gy-4 justify-content-between">
+          <div class="col-lg-4 order-lg-last hero-img" data-aos="zoom-out" data-aos-delay="100">
+            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+          </div>
+
+          <div class="col-lg-6  d-flex flex-column justify-content-center" data-aos="fade-in">
+            <h1> تعلم مهارات القرصنة مع <span> عدي </span></h1>
+            <p>  مرحبا انا عدي مهندس برمجيات و خبير في الأمن السيبراني وامتلك مهارات جيدة في المجال ولدي الخبرات الكافية  </p>
+            <div class="d-flex">
+              <a href="#" class="btn-get" style="font-size: 26px;">Cyber Scurity</a>
+              <a href="https://youtu.be/147sLwe09yE?si=RD11_N3sfSNg73_G" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Video</span></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+        <defs>
+          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+        </defs>
+        <g class="wave1">
+          <use xlink:href="#wave-path" x="50" y="3"></use>
+        </g>
+        <g class="wave2">
+          <use xlink:href="#wave-path" x="50" y="0"></use>
+        </g>
+        <g class="wave3">
+          <use xlink:href="#wave-path" x="50" y="9"></use>
+        </g>
+      </svg>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section" >
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100" >
+        <div class="row align-items-xl-center gy-5"  style=" position: relative;">
+
+          <div class="col-xl-5 content ">
+            <h3> الأسناذ | عدي عبدالرزاق </h3>
+            <h2> ماهيا الكورسات التي ساقدمه في المنصة </h2>
+            <p>   ساقدم لكم كورسات بخصوص الأمن السيبراني وبرمجة الادوات الخاصة في الختراق والحمايات من اي هجوم على النظمة و الشبكات الخاصة وساقدم لكم كورسات برمجة تطبيقات سطح المكتب وانظمة التشغيل مثل  | Android  Iphone  </p>
+            <a href="#" class="read-more"><span></span><i class="bi bi-arrow-up-short"></i></a>
+          </div>
+
+          <div class="col-xl-7">
+            <div class="row gy-4 icon-boxes">
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-box">
+                  <i class="bi bi-buildings"></i>
+                  <h3>  جامعة تخرجي </h3>
+                  <p>   انا لم ادرس في اي جامعة تخرجة من منصات اون لاين تحت اشراف  مهندس مختص في الأمن السيبراني والبرمجة والخبرات الديه خبرا عاليا جدا </p>
+                </div>
+              </div> 
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box">
+                  <i class="bi bi-clipboard-pulse"></i>
+                  <h3> الشهادة </h3>
+                  <p>  لا امتلك اي شهادة في الختصاص ولكن قدمة امتحانات اون لاين وكان التقيم عاليا  </p>
+                </div>
+              </div> 
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /About Section -->
+
+
+
+
+    <!-- Details Section -->
+    <section id="details" class="details section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 style="font-size: 18px;">  Hacker | هكر </h2>
+        <div><span>    مهارات الفريق   </span> <span class="description-title">  الأزرق  و الأحمر </span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+            <img src="assets/img/details-1.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
+            <h3>  هل تحتاج الى تعلم مهارات الفريق الاحمر كي تكون قادر على حماية الانظمة والشبكات بشكل عام ? نعم</h3>
+            <p class="fst-italic">
+              Do you need to learn the skills of the red team in order to be able to protect systems and networks in general? Yes
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i><span> يجب ان تكون فاهم لغة البرمجة وانظمة التشغيل والشبكات و التشفير و تخطي الحمايات  </span></li>
+              <li><i class="bi bi-check"></i><span> نعم يجب ان تكون قادر على كشف الثغراة في المواقع والنظمة واستقلاله </span></li>
+              <li><i class="bi bi-check"></i> <span>  يجب ان يكون لديك قدرة في بناء ادواتك  و برمجياتك الخاصة لكشف نقاط الضعف  وستغلاله </span></li>
+              <li><i class="bi bi-check"></i> <span>  يجب ان تكون قادر على ستقلال الثغراة واختراق الانظمة والشبكات وكسر التشفير   </span></li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/details-2.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="200">
+            <h3> ماهيا مهارت وقدرات الفريق الأزرق </h3>
+            <p class="fst-italic">
+              What are the skills and abilities of the blue team? 
+            </p>
+            <p>
+               قادر على حماية النظمة و الشبكات واغلاق الثغرات الامنية والحساسة وحماية الملفات والبيانات لدى الشركة وقادر على بناء ادوات وسكربتات بنفسه لكشف اي هجوم على النظمة والشبكات والبينة التحتيه وكشف الهكر  ويمتلك مهارات عالية في تحليل البيانات وكشف البرمجيات الخبيثة 
+            </p>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out">
+            <img src="assets/img/details-3.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7" data-aos="fade-up">
+            <h3>! ماهيا التطبيقات التي سانقوم بنشائه في المنصة   </h3>
+            <p>What are the applications that we will create in the platform ? </p>
+            <ul>
+              <li><i class="bi bi-check"></i> <span> windwse | ستتعلم بناء تطبيقات سطح المكتب بي واجهاة رسومية وتفاعلية    </span></li>
+              <li><i class="bi bi-check"></i><span>  Android Iphone | ستتعلم بناء تطبيقات للهواتف الذكية الاندروايد و الايفون   </span></li>
+              <li><i class="bi bi-check"></i> <span> Web | ستتعلم بناء مواقع الاكترونية والتعامل مع قواعد البيانات   </span></li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out">
+            <img src="assets/img/details-4.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 order-2 order-md-1" data-aos="fade-up">
+            <h3> ! هل يجب ان اتعلم قواعد البيانات في تطبيقات الهواتف الذكية و تطبيقات سطح المكتب </h3>
+            <p class="fst-italic">
+              Should I learn databases in smartphone and desktop applications? 
+            </p>
+            <p>
+              نعم يجب ان تكون قادر على التعامل مع قواعد البيانات للتطبيقات الهواتف الذكية وتطبيقات سطح المكتب وكيفية أضافة المعلومات لقواعد البيانات وكيفية استرداد المعلومات والتعامل مع المعلوات وتسهيل الوصول للحسب من قبل المستخدمين وحماية المعلومات من الختراق وتقوية تشفير البيانات
+            </p>
+          </div>
+        </div><!-- Features Item -->
+
+      </div>
+
+    </section><!-- /Details Section -->
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2> معرض </h2>
+        <div><span>  شاهد بعض الكورسات </span> <span class="description-title"> المجانية </span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+          <div class="col-lg-3 col-md-4" style="text-align: center;">
+            <div class="gallery-item" style="position: relative; display: inline-block;">
+                <a href="https://youtu.be/IOHh3OEuVPM?si=-D249Wpjs66dh1Qu" class="glightbox" data-gallery="images-gallery">
+                    <img src="assets/img/gallery/4.jpg" alt="" class="img-fluid">
+                    <i class="bi bi-play-circle" style="position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); font-size: 3rem; color: white;"></i>
+                    <p style="color: #0438e2; margin-top: 20px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">احمي نفسك من الختراق</p>
+                </a>
+            </div>
+        </div>
+        
+  
+          <div class="col-lg-3 col-md-4"   style=" text-align: center; ">
+            <div class="gallery-item" style="position: relative; display: inline-block;">
+              <a href="https://youtu.be/Yu7qUc3ZupE?si=QuyiF5WnRadxzeF1" class="glightbox" data-gallery="images-gallery">
+                  <img src="assets/img/gallery/2.jpg"  class="img-fluid">
+                  <i class="bi bi-play-circle" style="position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); font-size: 3rem; color: white;"></i>
+                  <p style="color: #0438e2; margin-top: 20px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">    كيف يتم تعطيل حسابات التواصل الاجتماعي    </p>
+
+                  
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4"   style=" text-align: center; ">
+            <div class="gallery-item" style="position: relative; display: inline-block;">
+              <a href="https://youtu.be/S8lRoC6ztTQ?si=Gk8_PxP5s7y60WAq" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/1.jpg"  class="img-fluid">
+                <i class="bi bi-play-circle" style="position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); font-size: 3rem; color: white;"></i>
+                <p style="color: #0438e2; margin-top: 20px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">     اختراق حسابات تواصل الاجتماعي  </p>
+
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 "  style=" text-align: center; ">
+            <div class="gallery-item" style="position: relative; display: inline-block;">
+              <a href="https://youtu.be/b2bJpDEBAE4?si=YoehKeCFfbgQ0hr_" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/3.jpg"  class="img-fluid">
+                <i class="bi bi-play-circle" style="position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); font-size: 3rem; color: white;"></i>
+                <p style="color: #0438e2; margin-top: 20px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">  اختراق قواعد بيانات الموقع  </p>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 "  style=" text-align: center; ">
+            <div class="gallery-item" style="position: relative; display: inline-block;">
+              <a href="https://youtu.be/bPYAYYw4cWg?si=Os3rgTns8sMOuR8O" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/5.jpg"  class="img-fluid">
+                <i class="bi bi-play-circle" style="position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); font-size: 3rem; color: white;"></i>
+                <p style="color: #0438e2; margin-top: 20px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">   احمي شبكتك عبر لغة بايثون  </p>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 "  style=" text-align: center; ">
+            <div class="gallery-item" style="position: relative; display: inline-block;">
+              <a href="https://youtu.be/oGWQckFWYzI?si=hYxsJPB6h5hVxkfN" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/6.jpeg"  class="img-fluid">
+                <i class="bi bi-play-circle" style="position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); font-size: 3rem; color: white;"></i>
+                <p style="color: #0438e2; margin-top: 20px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">     برمج فايروس في بايثون    </p>
+              </a>
+            </div>
+          </div>
+
+
+
+
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /Gallery Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section dark-background">
+
+      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>  الفريق الاحمر </h3>
+                <h4> المحاضر عدي عبدالرزاق </h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>   الفريق الاحمر فريق هجومي يقوم باستقلال الثغرات الامنية  للتسلال على النظمة والسيرفرات لديه قدرات عالية في الختراق   ستتعلم المهاراة مع المحاضر عدي عبدالرزاق  </span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/n.jpg" class="testimonial-img" alt="">
+                <h3>  الشبكات  </h3>
+                <h4>المحاضر عدي عبدالرزاق</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>  من اهم الامور في الأمن السيبراني تعلم الشبكات ومهارته وكيف تحمي   شبكتك الخاصة و شبكة الشركة وكيف تبني تطبيقاتك و سكربتاتك الخاصة في الشبكات ومراقبة حركات المرور و البروتكولات  </span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/pr.png" class="testimonial-img" alt="">
+                <h3> البرمجة </h3>
+                <h4> المحاضر عدي عبدالرزاق </h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>  تعلم البرمجة بشكل عام مهم في عصرنا هذا ويظن مهم في عالم الامن السيبراني و الهاكنك بشكل عام اذا كان فربق احمر او ازرق او اسود يجب عليك اتقان لغة البرمجة بشكل عام تصميم المواقع وبناء تطبيقات للهواتف الذكية واجهازة الحواسيب بكشل عام لجميع الانظمة والتعامل مع البيانات   </span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3> الفريق الأزرق </h3>
+                <h4>  المحاضر عدي عبدالرزاق  </h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>  الفريق الأزرق يقوم بدوره  بحماية الانظمة من الثغراة الامنية الحساسة قبل ان يقوم الهكر بختراق او كشف نقاط الضعف يقوم بفحص عن الثغرات وغلاقه يقوم بمراقبة حركة مرور البيانات بين المواظفين لدى الشركة       </span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 style="color: #1d73f3; font-size: 20px;">القنوات</h2>
+        <div><span> قنواتي المتاحة على </span> <span class="description-title"> الانترنيت </span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-5">
+
+          <div class="col-lg-4 col-md-5" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team/team-1.png" class="img-fluid" style="width: 300px;"></div>
+              <div class="member-info">
+                <h4> قناتي اليوتيوب </h4>
+                <span>Youtube</span>
+                <div class="social col-lg-4" style="width: 180px; height: 40px; text-align: center;">
+                  <a href="https://youtube.com/@-axt8?si=kHvQIDR4QST1NPJj" class="cta-btn" style=" border-radius: 3px; padding: 10px 60px; background-color: #053bced5; color: #fff;"> متابعة </a>
+               </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="pic"><i class="bi bi-whatsapp" style="font-size: 200px; color: #00d37b;"></i></div>
+              <div class="member-info">
+                <h4> قناتي الواتساب </h4>
+                <span>Whatsapp</span>
+                <div class="social col-lg-4" style="width: 180px; height: 40px; text-align: center;">
+                  <a href="https://whatsapp.com/channel/0029VajXdVgB4hdaL22VQO0U" class="cta-btn" style=" border-radius: 3px; padding: 10px 60px; background-color: #053bced5; color: #fff;"> متابعة </a>
+               </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300" >
+            <div class="member">
+              <div class="pic"><i class="bi bi-telegram" style="font-size: 200px; color: #0488bd;"></i></div>
+              <div class="member-info">
+                <h4>قناتي التلكرام</h4>
+                <span>Telegram</span>
+                <div class="social col-lg-4" style="width: 180px; height: 40px; text-align: center;">
+                   <a href="https://t.me/CberSy" class="cta-btn" style=" border-radius: 3px; padding: 10px 60px; background-color: #053bced5; color: #fff;"> متابعة </a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2> كورساتي </h2>
+        <div><span> اسعار الأشتراكات في  </span> <span class="description-title">  الكورسات </span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="pricing-item">
+              <h3>  الأمن السيبراني  </h3>
+              <p class="description">   تعلم مهارات الأمن السيبراني مجاني في بداية تعلمك معنا مع المهندس عدي عبدالرزاق</p>
+              <h4><sup>$</sup>0<span> / الشهر</span></h4>
+              <a href="#" class="cta-btn">  مشاهدة الكورسات </a>
+              <p class="text-center small"> لا يوجد كورسات مدفوعة في الوقت الحالي</p>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>  شرح كورسات عمليه </span></li> 
+                <li class="na"><i class="bi bi-x" style="color: red;"></i> <span>  شرح صعب ومعقد </span></li>   
+              </ul>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="pricing-item featured">
+              <p class="popular">Developer </p>
+              <h3> تصميم مواقع اكترونية </h3>
+              <p class="description"> تعلم تصميم المواقع من الصفر حتى الحتراف بابسط الطرق مع المهندس عدي عبدالرزاق </p>
+              <h4><sup>$</sup>0<span> / الشهر</span></h4>
+              <a href="#" class="cta-btn a" style="color: #444444;"> مشاهدة الكورسات</a>
+              <p class="text-center small"> لا يوجد كورسات مدفوعة في الوقت الحالي </p>
+              <ul>
+                <li><i class="bi bi-check"></i> <span> html </span></li>
+                <li><i class="bi bi-check"></i> <span>css</span></li>
+                <li><i class="bi bi-check"></i> <span>javascript</span></li>
+                <li><i class="bi bi-check"></i> <span>bootstrap</span></li>
+                <li><i class="bi bi-check"></i> <span>php</span></li>
+                <li><i class="bi bi-check"></i> <span>sql</span></li>
+                <li class="na "><i class="bi bi-x" style="color: red;"></i> <span> شرح صعب ومعقد </span></li>
+              </ul>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="pricing-item">
+              <h3> انشاء تطبيقات للهواتف الذكية </h3>
+              <p class="description">  تعلم انشاء تطبيقات للهواتف المحمولة  للاندروايد و الايفون مع المهندس عدي عبدالرزاق </p>
+              <h4><sup>$</sup>0<span> / الشهر</span></h4>
+              <a href="#" class="cta-btn"> مشاهدة الكورسات </a>
+              <p class="text-center small"> لا يوجد كورسات مدفوعة في الوفت الحالي  </p>
+              <ul>
+                <li><i class="bi bi-check"></i> <span> Android | انشاء تطبيقات  </span></li>
+                <li><i class="bi bi-check"></i> <span> Iphone | انشاء تطبيقات  </span></li>
+                <li><i class="bi bi-check"></i> <span> sql    | انشاء قواعد بيانات  </span></li>
+                <li class="na"><i class="bi bi-x" style="color: red;"></i> <span> شرح صعب ومعقد </span></li>
+
+              </ul>
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section light-background">
+
+      <div class="container-fluid">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+
+            <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
+              <h3><span> ! ماهيا الكورسات كل من الفريقين التي سأتعلمه في   </span><strong>  المنصة </strong></h3>
+              <p>
+                What are the courses for each of the two teams that I will learn in Platform ?
+              </p>
+            </div>
+
+            <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="faq-item ">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3> Networks | الشبكات </h3>
+                <div class="faq-content">
+                  <p>  ستتعلم اساسيات الشبكات وتفهم كل شي يخص الشبكات بشكل عام راح تتقن كيفية اختراق الشبكات وكيف تحمي الشبكات من الختراق والهجوم على الشبكة  ستتعلم انشاء ادوات بخصوص الشبكات من ناحية الحماية وتطبيقات سطح المكتب   </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item faq-active">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3> Red Team | الفريق الأحمر الهجومي </h3>
+                <div class="faq-content">
+                    <p>   ستتعلم كيفية كشف الثغرات في الانظمة و السيرفرات و وكيف تقوم بانشاء سكربتات تقوم بستغلال الثغرات وكشف الثغرات ستتعلم كيف تقوم بانشاء ادواتك الخاصة مثل  <br> <br>     
+                          [Phishing , Malware , Brute Force Attacks , Network Attacks , Exploitation of Vulnerabilities , Social Engineering , Stealer , Keylogger ]
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3> Blue Team | الفريق الأزرق الدفاعي </h3>
+                <div class="faq-content">
+                  <p>  ستتقن الدفاع والحماية من الهجمات الشائعة المعروفه لدى المهاجمين مثل <br> [Phishing , Malware , Brute Force Attacks , Network Attacks , Exploitation of Vulnerabilities , Social Engineering , Stealer , Keylogger ] ستتعلم انشاء ادوات خاص بك لحماية النظمة والشبكات وكشف الثغرات واغلاقه قبل ان يتم استغلاله من المهاجمين    </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 order-1 order-lg-2">
+            <img src="assets/img/faq.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>  للتواصل </h2>
+        <div><span>  التواصل مع المحاضر  </span> <span class="description-title"> عدي عبدالرزاق </span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3> الموقع </h3>
+                <p> سورية </p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telegram flex-shrink-0"></i>
+              <div>
+                <h3>تواصل</h3>
+               <a href="https://t.me/AXTS8">https://t.me/AXTS8</a>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p><a href="mailto:brmjtaxt@gmail.com">brmjtaxt@gmail.com</a></p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+              <!-- Stats Section -->
+    <section id="stats" class="stats section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-emoji-smile"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+              <p>  عدد المحاضرين في الموقع   </p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-journal-richtext"></i>
+            <div class="stats-item">
+                <span id="daysCounter" data-purecounter-start="0" data-purecounter-end="0" class="purecounter"></span>
+                <p> أيام عمل الموقع</p>
+            </div>
+        </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-headset"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+              <p>عدد القنوات الخاصة</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-star-fill"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>
+              <p> ساعة الخدمة </p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename"> Cyber Scurity | <i class="bi bi-emoji-smile" style="font-size: 30px; color: #ffdb0d;"></i></span>
+          </a>
+          <div class="footer-contact pt-3">
+            <img src="assets/img/ss.png" alt="" style="width: 250px; margin-left: -40px;">
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="https://t.me/AXTS8"><i class="bi bi-telegram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100040869153147&mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/oday56789?igsh=MXdiYTFiNnRidHQ1Nw=="><i class="bi bi-instagram"></i></a>
+            <a href="https://whatsapp.com/channel/0029VajXdVgB4hdaL22VQO0U"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4> استفسارات </h4>
+          <ul>
+            <li><a href="#hero">  الصفحة الرئسية </a></li>
+            <li><a href="#about">من نحن </a></li>
+            <li><a href="#hero"> تبرع للقناة </a></li>
+            <li><a href="#contact"> التواصل معي </a></li>
+
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4> خدمات  </h4>
+          <ul>
+            <li><a href="#pricing"> كورساتي </a></li>
+            <li><a href="#team">قنواتي</a></li>
+            <li><a href="#gallery">معرض</a></li>
+            <li><a href="#footer">لمحة</a></li>
+
+
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>  المهندس عدي عبدالرزاق </h4>
+          <p>  اتمنى النجاح للجميع  وبتوفيق لكل من يهدف للعلم الله يقوي كل الطلاب يلي سهرو الليالي من اجل العلم واهدافهم وانا شخص مثلكم اهدف للعلم بالتوفيق  والنجاح  شكرا موقع سايبر سكيورتي  </p>
+          <div class="php-email-form">
+
+             <h4 style=" font-weight: bold; font-family: serif;">  Cyber Scurity | موقع الأمن السيبراني  </h4>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p> <strong class="px-1 sitename">  Cyber Scurity |</strong> <span> <b>  الأمن السيبراني   </b> </span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <span> <b>© 2025 </b></span>كل الحقوق محفوظة <span  style=" color: #00d37b; font-weight: bold;">Cyber Scurity</span>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    // تاريخ بدء تشغيل الموقع (مثال: 1 يناير 2023)
+    const launchDate = new Date('2024-10-02');
+    const currentDate = new Date();
+
+    // حساب عدد الأيام بين التاريخين
+    const timeDifference = currentDate - launchDate;
+    const daysDifference = Math.floor(timeDifference / (1000 * 3600 * 24));
+
+    // تحديث النص في العنصر
+    document.getElementById('daysCounter').textContent = daysDifference;
+
+
+    document.getElementById('usdtLink').onclick = function(event) {
+        event.preventDefault();
+        $('#myModal').modal('show');
+    }
+
+    document.getElementById('copyBtn').onclick = function() {
+        var copyText = document.getElementById('walletAddress');
+        copyText.select();
+        document.execCommand("copy");
+        alert("تم نسخ الرابط: " + copyText.value);
+    }
+</script>
+</body>
+
+</html>
