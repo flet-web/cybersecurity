@@ -789,6 +789,13 @@
 
              <h4 style=" font-weight: bold; font-family: serif;">  Cyber Scurity | موقع الأمن السيبراني  </h4>
 
+              <p>يمكنك تحميل التطبيق لجهاز الأندرويد الآن:</p>
+             <i class="bi bi-android icon" style="color: #00d37b; font-size: 25px;"></i>
+             <a href="https://median.co/share/yporpn#apk" class="download-button" download style="color: #fff; background-color: #00d37b;">
+                 <i class="bi bi-arrow-down icon"></i>
+                 تحميل
+             </a>
+
           </div>
         </div>
 
@@ -857,6 +864,21 @@ if (daysDifference === 0) {
         document.execCommand("copy");
         alert("تم نسخ الرابط: " + copyText.value);
     }
+
+
+         // إضافة حدث للتحميل المباشر
+            document.querySelector('.download-button').addEventListener('click', function(event) {
+            event.preventDefault(); // منع الانتقال إلى الرابط
+            const downloadUrl = this.getAttribute('href'); // الحصول على رابط التحميل
+            
+            // تنفيذ التحميل
+            const link = document.createElement('a');
+            link.href = downloadUrl;
+            link.download = ''; // يحدد أن هذا هو تحميل
+            document.body.appendChild(link);
+            link.click(); // محاكاة النقر
+            document.body.removeChild(link); // إزالة الرابط بعد التحميل
+        });
 </script>
 </body>
 
