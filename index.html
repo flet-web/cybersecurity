@@ -834,14 +834,14 @@ const currentDate = new Date();
 
 // حساب عدد الأيام بين التاريخين
 const timeDifference = currentDate - launchDate;
-const daysDifference = Math.floor(timeDifference / (1000 * 3600 * 24));
+const daysDifference = Math.floor(timeDifference / (1000 * 3600 * 24)) + 1; // إضافة 1 لتضمين اليوم الأول
 
-// تحديث النص في العنصر بناءً على عدد الأيام
+// تحديث النص في العنصر
 const daysCounterElement = document.getElementById('daysCounter');
 if (daysDifference === 0) {
-    daysCounterElement.textContent = "اليوم هو يوم التشغيل";
+    daysCounterElement.textContent = "اليوم هو يوم التشغيل الأول";
 } else {
-    daysCounterElement.textContent = `${daysDifference} يوم${daysDifference > 1 ? 'ات' : ''}`;
+    daysCounterElement.textContent = `${daysDifference} يوم${daysDifference > 1 ? 'ات' : ''} من التشغيل`;
 }
 
 
