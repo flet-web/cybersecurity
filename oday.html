@@ -5,7 +5,8 @@
         <meta charset=utf-8>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>  عدي | Cyber </title>
-
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; object-src 'none';">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.example.com;">
         <meta property="og:title" content=" عدي | Cyber ">
         <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS09I1uToQC7XUFFFIeDdUz_5N3vQVfCP6p2-UrD4DqwHtjFMB-2mJwebjk5IFXX2rSPc8&usqp=CAU"> <!-- رابط الصورة -->
         <meta property="og:url" content="https://www.Oday_Cyber.com"> <!-- رابط الموقع -->
@@ -1037,6 +1038,13 @@
                 const colors = ['pink', 'red', 'purple', 'yellow', 'blue'];
                 confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
             }
+        });
+
+                      // مثال لتحميل المحتوى ديناميكيًا باستخدام AJAX
+        fetch('your-content-url')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('content-container').innerHTML = data;
         });
   
         </script>
