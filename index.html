@@ -871,10 +871,12 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script>
-// تاريخ بدء تشغيل الموقع (مثال: 2 أكتوبر 2024)
-// تحديد تاريخ الإطلاق
-const launchDate = new Date('2024-10-02'); // التاريخ الذي تريد حساب الفارق منه
-const currentDate = new Date(); // التاريخ الحالي
+// تحديد تاريخ بدء العمل (10 أيام مضت من اليوم الحالي)
+const launchDate = new Date();
+launchDate.setDate(launchDate.getDate() - 10); // نحدد تاريخ البدء بـ 10 أيام قبل اليوم
+
+// تاريخ اليوم
+const currentDate = new Date();
 
 // حساب الفرق بين التاريخين بالميلي ثانية
 const timeDifference = currentDate - launchDate;
@@ -883,12 +885,12 @@ const daysDifference = Math.floor(timeDifference / (1000 * 3600 * 24)) + 1; // �
 // تحديد العنصر الذي سيعرض الفرق
 const daysCounterElement = document.getElementById('daysCounter');
 
-// التحقق من الفرق في الأيام
-if (daysDifference === 0) {
-    daysCounterElement.textContent = "اليوم هو يوم التشغيل الأول";
-} else {
-    daysCounterElement.textContent = `${daysDifference} يوم${daysDifference > 1 ? 'ات' : ''} من التشغيل`;
-}
+// تعيين قيمة الأيام في PureCounter
+daysCounterElement.setAttribute('data-purecounter-end', daysDifference);
+
+// تفعيل العداد باستخدام PureCounter (إذا لم يتم تفعيله تلقائيًا)
+new PureCounter();
+
 
 
 
