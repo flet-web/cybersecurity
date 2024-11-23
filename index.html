@@ -872,15 +872,18 @@
   <script src="assets/js/main.js"></script>
   <script>
 // تاريخ بدء تشغيل الموقع (مثال: 2 أكتوبر 2024)
-const launchDate = new Date('2024-10-02');
-const currentDate = new Date();
+// تحديد تاريخ الإطلاق
+const launchDate = new Date('2024-10-02'); // التاريخ الذي تريد حساب الفارق منه
+const currentDate = new Date(); // التاريخ الحالي
 
-// حساب عدد الأيام بين التاريخين
+// حساب الفرق بين التاريخين بالميلي ثانية
 const timeDifference = currentDate - launchDate;
 const daysDifference = Math.floor(timeDifference / (1000 * 3600 * 24)) + 1; // إضافة 1 لتضمين اليوم الأول
 
-// تحديث النص في العنصر
+// تحديد العنصر الذي سيعرض الفرق
 const daysCounterElement = document.getElementById('daysCounter');
+
+// التحقق من الفرق في الأيام
 if (daysDifference === 0) {
     daysCounterElement.textContent = "اليوم هو يوم التشغيل الأول";
 } else {
