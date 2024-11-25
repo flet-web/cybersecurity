@@ -893,23 +893,32 @@
   <script>
 // تحديد تاريخ بدء العمل (10 أيام مضت من اليوم الحالي)
 const launchDate = new Date();
-launchDate.setDate(launchDate.getDate() - 10); // نحدد تاريخ البدء بـ 10 أيام قبل اليوم
+launchDate.setDate(launchDate.getDate() - 12); // نحدد تاريخ البدء بـ 10 أيام قبل اليوم
 
 // تاريخ اليوم
 const currentDate = new Date();
 
 // حساب الفرق بين التاريخين بالميلي ثانية
-const timeDifference = currentDate - launchDate;
-const daysDifference = Math.floor(timeDifference / (1000 * 3600 * 24)) + 1; // إضافة 1 لتضمين اليوم الأول
+function updateDaysCounter() {
+    const currentDate = new Date();
+    const timeDifference = currentDate - launchDate;
+    const daysDifference = Math.floor(timeDifference / (1000 * 3600 * 24)); // لا تحتاج لإضافة 1 لأنك تحسب الأيام الكاملة فقط
 
-// تحديد العنصر الذي سيعرض الفرق
-const daysCounterElement = document.getElementById('daysCounter');
+    // تحديد العنصر الذي سيعرض الفرق
+    const daysCounterElement = document.getElementById('daysCounter');
 
-// تعيين قيمة الأيام في PureCounter
-daysCounterElement.setAttribute('data-purecounter-end', daysDifference);
+    // تعيين قيمة الأيام في PureCounter
+    daysCounterElement.setAttribute('data-purecounter-end', daysDifference);
 
-// تفعيل العداد باستخدام PureCounter (إذا لم يتم تفعيله تلقائيًا)
-new PureCounter();
+    // تفعيل العداد باستخدام PureCounter (إذا لم يتم تفعيله تلقائيًا)
+    new PureCounter();
+}
+
+// استدعاء الدالة لتحديث العداد عند تحميل الصفحة
+updateDaysCounter();
+
+// تحديث العداد كل 24 ساعة (86,400,000 ميلي ثانية)
+setInterval(updateDaysCounter, 1000 * 3600 * 24);
 
 
 
