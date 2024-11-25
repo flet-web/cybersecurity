@@ -52,14 +52,14 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
 
-	  .circle {
+	  .airplane {
             position: absolute;
             width: 30px;
             height: 30px;
-            border-radius: 50%;
-            background-color: rgba(0, 123, 255, 0.7);
-            pointer-events: none; /* لجعل الدائرة لا تؤثر على التفاعل مع العناصر الأخرى */
-            z-index: 999;
+            background-color: #2e006bbe; /* لون الطائرة (البرتقالي) */
+            border-radius: 50%; /* لجعل الشكل دائري */
+            pointer-events: none; /* لكي لا تؤثر الطائرة على التفاعل مع العناصر الأخرى */
+            z-index: 1000; /* وضعها فوق باقي المحتويات */
             transition: left 0.1s, top 0.1s;
         }
 
@@ -105,7 +105,7 @@
 	
 
   <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="circle" id="circle"></div>
+        <div class="airplane" id="airplane"></div>
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
@@ -1021,13 +1021,15 @@ setInterval(updateDaysCounter, 1000 * 3600 * 24);
 
 
 	   document.addEventListener('mousemove', function(event) {
-            var circle = document.getElementById('circle');
+            var airplane = document.getElementById('airplane');
+
+            // تحديث موقع الطائرة بناءً على الماوس
             var mouseX = event.pageX;
             var mouseY = event.pageY;
 
-            // تحديث موقع الدارة الصغيرة بناءً على مكان الماوس
-            circle.style.left = mouseX - 15 + 'px';  // -15 لتعويض نصف حجم الدائرة
-            circle.style.top = mouseY - 15 + 'px';   // -15 لتعويض نصف حجم الدائرة
+            // تعيين مكان الطائرة تحت المؤشر مباشرة
+            airplane.style.left = (mouseX - 15) + 'px';  // -15 لتعويض نصف حجم الطائرة
+            airplane.style.top = (mouseY + 15) + 'px';   // +15 لجعل الطائرة أسفل المؤشر
         });
   
 
