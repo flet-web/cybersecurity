@@ -51,6 +51,21 @@
 
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
+
+	  .circle {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: rgba(0, 123, 255, 0.7);
+            pointer-events: none; /* لجعل الدائرة لا تؤثر على التفاعل مع العناصر الأخرى */
+            z-index: 999;
+            transition: left 0.1s, top 0.1s;
+        }
+
+
+
+	  
       .modal-header {
           display: flex;
           justify-content: space-between;
@@ -87,6 +102,7 @@
 </head>
 
 <body class="index-page">
+	div class="circle" id="circle"></div>
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -1000,6 +1016,18 @@ setInterval(updateDaysCounter, 1000 * 3600 * 24);
             e.preventDefault(); // منع القائمة المنبثقة عند النقر بزر الماوس الأيمن
         });
          // مثال لتحميل المحتوى ديناميكيًا باستخدام AJAX
+
+
+
+	   document.addEventListener('mousemove', function(event) {
+            var circle = document.getElementById('circle');
+            var mouseX = event.pageX;
+            var mouseY = event.pageY;
+
+            // تحديث موقع الدارة الصغيرة بناءً على مكان الماوس
+            circle.style.left = mouseX - 15 + 'px';  // -15 لتعويض نصف حجم الدائرة
+            circle.style.top = mouseY - 15 + 'px';   // -15 لتعويض نصف حجم الدائرة
+        });
   
 
 </script>
