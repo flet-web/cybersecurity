@@ -52,15 +52,14 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
 
-	  .airplane {
+	   .airplane {
             position: absolute;
             width: 30px;
             height: 30px;
-            background-color: #2e006bbe; /* لون الطائرة (البرتقالي) */
+            background-color: #9c005b; /* لون الطائرة */
             border-radius: 50%; /* لجعل الشكل دائري */
             pointer-events: none; /* لكي لا تؤثر الطائرة على التفاعل مع العناصر الأخرى */
             z-index: 1000; /* وضعها فوق باقي المحتويات */
-            transition: left 0.1s, top 0.1s;
         }
 
 
@@ -1020,18 +1019,20 @@ setInterval(updateDaysCounter, 1000 * 3600 * 24);
 
 
 
-	   document.addEventListener('mousemove', function(event) {
-            var airplane = document.getElementById('airplane');
+	var airplane = document.getElementById('airplane');
 
-            // تحديث موقع الطائرة بناءً على الماوس
+        // إضافة حدث للمؤشر
+        document.addEventListener('mousemove', function(event) {
+            // موقع الماوس
             var mouseX = event.pageX;
             var mouseY = event.pageY;
 
-            // تعيين مكان الطائرة تحت المؤشر مباشرة
-            airplane.style.left = (mouseX - 15) + 'px';  // -15 لتعويض نصف حجم الطائرة
-            airplane.style.top = (mouseY + 15) + 'px';   // +15 لجعل الطائرة أسفل المؤشر
+            // تحديث موقع الطائرة بشكل مباشر باستخدام requestAnimationFrame
+            window.requestAnimationFrame(function() {
+                airplane.style.left = (mouseX - 15) + 'px';  // -15 لتعويض نصف حجم الطائرة
+                airplane.style.top = (mouseY + 15) + 'px';   // +15 لجعل الطائرة أسفل المؤشر
+            });
         });
-  
 
 </script>
 </body>
