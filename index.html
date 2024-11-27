@@ -53,17 +53,7 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
 
-	   .airplane {
-            position: absolute;
-            width: 30px;
-            height: 30px;
-            background-color: #9c005b; /* لون الطائرة */
-            border-radius: 50%; /* لجعل الشكل دائري */
-            pointer-events: none; /* لكي لا تؤثر الطائرة على التفاعل مع العناصر الأخرى */
-            z-index: 1000; /* وضعها فوق باقي المحتويات */
-        }
-
-
+	
 
 	  
       .modal-header {
@@ -105,7 +95,7 @@
 	
 
   <header id="header" class="header d-flex align-items-center fixed-top">
-        <div class="airplane" id="airplane"></div>
+   
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
@@ -1016,24 +1006,7 @@ setInterval(updateDaysCounter, 1000 * 3600 * 24);
             document.addEventListener("contextmenu", function (e) {
             e.preventDefault(); // منع القائمة المنبثقة عند النقر بزر الماوس الأيمن
         });
-         // مثال لتحميل المحتوى ديناميكيًا باستخدام AJAX
-
-
-
-	var airplane = document.getElementById('airplane');
-
-        // إضافة حدث للمؤشر
-        document.addEventListener('mousemove', function(event) {
-            // موقع الماوس
-            var mouseX = event.pageX;
-            var mouseY = event.pageY;
-
-            // تحديث موقع الطائرة بشكل مباشر باستخدام requestAnimationFrame
-            window.requestAnimationFrame(function() {
-                airplane.style.left = (mouseX - 15) + 'px';  // -15 لتعويض نصف حجم الطائرة
-                airplane.style.top = (mouseY + 15) + 'px';   // +15 لجعل الطائرة أسفل المؤشر
-            });
-        });
+  
 
 </script>
 </body>
